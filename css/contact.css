@@ -1,0 +1,187 @@
+*,
+*:before,
+*:after{
+    margin: 0;
+    padding: 0;
+    box-sizing:  border-box;
+    font-family: 'DM Serif Display', 'DM Sans';
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-image:url(../ain/e-resume/image/background1.JPG);
+}
+
+.logo{
+    height: 60px;
+    width: 80px;
+}
+
+.textfooter { 
+    text-align: center;
+    font-size: 13px;
+    color: #fffff0;
+}
+
+header{
+    background-color: #2c3639;
+    height: 30px;
+    background-size: auto;
+    background-position: center;
+    text-align: center;
+}
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 20px 20px;
+}
+
+nav ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #2c3639;
+    font-family: 'DM Serif Display';
+    font-weight: bold;
+    position: relative;
+    letter-spacing: .5px;
+}
+
+a:after{
+    content: "";
+    position: absolute;
+    background-color: #913535;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+a:hover:after,
+a.active:after{
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+    height: 495px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    position: relative;
+    background-color: #913535;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    overflow: hidden;
+    left: 10%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.circle img{
+    position: relative;
+    max-width: 100%;
+    height: 400px;
+    left: 10%;
+}
+
+.contact{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons ul li{
+    list-style: none;
+    margin: 40px; 
+    text-decoration: none;
+}
+
+.info ul li{
+    list-style: none;
+    margin: 40px 10px;
+    text-decoration: none;
+    letter-spacing: .5px;
+    line-height: 30px;
+}
+
+.info ul li h1{
+    color: #2c3639;
+}
+
+.icons ul li img{
+    width: 55px;
+}
+
+.ref{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../ain/e-resume/image/background4.JPG);
+    background-size: contain;
+}
+
+.ref-images{
+    position: relative;
+    float: left;
+}
+
+.inforef{
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+    letter-spacing: .5px;
+    font-size: 22px;
+}
+ 
+.inforef h1{
+    color: #2c3639;
+    display: inline-block;
+}
+
+.ref img{
+    position: relative;
+    float: left;
+    margin: 50px;
+    border-radius: 30px;
+    width: 200px;
+}
+
+footer{
+    font-family: 'DM Serif Display';
+    color: #fff;
+    background-color: #2c3639;
+    font-size: 16px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 16px 16px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+}

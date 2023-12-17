@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "../../../../ain/e-resume/audio"
+		},
+		{
+			"path": "../../../../ain/e-resume/image"
+		},
+		{
+			"path": "../../../../ain/e-resume/video"
+		}
+	],
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Attach to Chrome",
+				"port": 9222,
+				"request": "attach",
+				"type": "chrome",
+				"webRoot": "${workspaceFolder}"
+			}
+
+		]
+	}
+}

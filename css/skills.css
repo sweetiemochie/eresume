@@ -1,0 +1,266 @@
+*,
+*:before,
+*:after{
+    margin: 0;
+    padding: 0;
+    box-sizing:  border-box;
+    font-family: 'DM Serif Display', 'DM Sans';
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-image:url(../ain/e-resume/image/background1.JPG);
+}
+
+.logo{
+    height: 60px;
+    width: 80px;
+}
+
+.textfooter { 
+    text-align: center;
+    font-size: 13px;
+    color: #fffff0;
+}
+
+header{
+    background-color: #2c3639;
+    height: 30px;
+    background-size: auto;
+    background-position: center;
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 20px 20px;
+}
+
+nav ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #2c3639;
+    font-family: 'DM Serif Display';
+    font-weight: bold;
+    position: relative;
+    letter-spacing: .5px;
+}
+
+a:after{
+    content: "";
+    position: absolute;
+    background-color: #913535;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+a:hover:after,
+a.active:after{
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.achievement{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.text{
+    position: relative;
+    left: 10%;
+    margin: 10px 10px;
+    letter-spacing: .5px;
+    color: #2c3639;
+}
+
+.circle {
+    position: relative;
+    background-color: #913535;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin: 30px 10px;
+    overflow: hidden;
+    left: 10%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.circle img{
+    max-width: 100%
+}
+
+.card{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 250px;
+    height: 300px;
+    margin: 30px;
+    font-size: 12px;
+    color: #2c3639;
+    border-radius: 30px;
+    overflow: hidden;
+    font-family: 'DM Sans';
+}
+
+.card-progress{
+    position: relative;
+    text-align: center;
+    width: 300px;
+    height: 50px;
+    margin: 30px;
+    color: #2c3639;
+    font-family: 'DM Sans';
+}
+
+.card-progress h2, h4{
+    margin-bottom: 10px;
+}
+
+.oralhistory,
+.dgflo{
+    height: 100%;
+}
+
+.technical{
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    background-image: url(../ain/e-resume/image/background3.JPG);
+    background-size: contain;
+}
+
+.container-tech{
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-1{
+    position: relative;
+    left: 10%;
+    top: 10%;
+    letter-spacing: .5px;
+    color: #2c3639;
+}
+
+.progress {
+    background: #fffff0;
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0;
+    height: 30px;
+    width: 250px;
+}
+  
+.progress-value {
+    animation: load 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: #913535;
+    height: 30px;
+    width: 0;
+}
+
+.progress-value-second{
+    animation: progress-value-second 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: #913535;
+    height: 30px;
+    width: 0;
+}
+
+.progress-value span,
+.progress-value-second span {
+    color: #fffff0;
+}
+
+@keyframes progress-value-second {
+    0% { width: 0; }
+    100% { width: 70%; }
+}
+
+@keyframes load {
+    0% { width: 0; }
+    100% { width: 90%; }
+}
+
+.soft{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-image: url(../ain/e-resume/image/background4.JPG);
+    background-size: contain;
+}
+
+.card-soft{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 250px;
+    height: 300px;
+    margin: 30px;
+    font-size: 12px;
+    color: #2c3639;
+    border-radius: 30px;
+    overflow: hidden;
+    font-family: 'DM Sans';
+}
+
+.card-soft img{
+    max-width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.card-soft h2{
+    margin: 30px;
+}
+
+footer{
+    font-family: 'DM Serif Display';
+    color: #fff;
+    background-color: #2c3639;
+    font-size: 16px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 16px 16px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+}
